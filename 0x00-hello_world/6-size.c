@@ -19,3 +19,4 @@ printf("Size of a char : %lu byte(s)\n", (unsigned long)sizeof(3));
 printf("Size of a char : %lu byte(s)\n", (unsigned long)sizeof(4));
 printf("Size of a char : %lu byte(s)\n", (unsigned long)sizeof(5));
 return (0);
+}

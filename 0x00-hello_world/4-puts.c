@@ -1,4 +1,4 @@
-# include <stdio.h>
+#include <stdio.h>
 /**
  * main - A program that use put function to display a line
  * return: always 0

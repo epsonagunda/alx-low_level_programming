@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * main - A program to print a new lin  using fputs function.
+ * main - Program to print a new line using fputs function.
  * Return: 1 (pass)
  */
 int main(void)

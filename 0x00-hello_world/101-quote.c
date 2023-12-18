@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
  * main - A program to print a new lin  using fputs function.
  * Return: 1 (pass)

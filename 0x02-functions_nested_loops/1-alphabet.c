@@ -1,11 +1,12 @@
 #include"main.h"
 /**
- * main - statrting point
- * Return: 0 (end)
+ * print_alphabet - alphabet displayed
+ * Return: void
  */
 void print_alphabet(void)
 {
-	char letter;
-	for (letter = 'a';letter <= 'z';letter++);
-	_putchar('\n')
+char ch;
+for (ch = 'a'; ch <= 'z'; ch++);
+_putchar(ch);
+_putchar('\n');
 }

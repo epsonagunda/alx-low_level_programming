@@ -4,7 +4,7 @@
 /**
  * main - check the code
  *
- * Return: 0 (pass).
+ * Return: Always 0.
  */
 int main(void)
 {

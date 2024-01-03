@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * void reset_to_98 - updates the value it points to to 98.
+ * reset_to_98 - a funcation that takes a pointer to an int a
  * the pointer points to to 98
  * @n: pointer to the variable to update
  * Return: n

@@ -5,29 +5,42 @@
   *@name: struct parameter name
   *@age: age of the dog
   *@owner: owner of the dog
+  *Return: NULL if the function fails
   */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-int nlen, olen, i;
-dog_t *doggy;
-nlen = olen = 0;
-while (name[nlen++])
+int a, b, c;
+dog_t *p;
+
+p = malloc(sizeof(dog_t));
+
+if (p == NULL)
+{
+free(p);
+return (NULL);
+}
+for (a = 0; name[a]; a++)
 ;
-while (owner[olen++])
+for (b = 0; owner[b]; b++)
 ;
-doggy = malloc(sizeof(dog_t));
-if (doggy == NULL)
+p->name = malloc(a + 1);
+p->owner = malloc(b + 1);
+
+if (p->name == NULL || p->owner == NULL)
+{
+free(p->name), free(p->owner), free(p);
 return (NULL);
-doggy->name = malloc(nlen * sizeof(doggy->name));
-if (doggy == NULL)
-return (NULL);
-for (i = 0; i < nlen; i++)
-doggy->name[i] = name[i];
-doggy->age = age;
-doggy->owner = malloc(olen * sizeof(doggy->owner));
-if (doggy == NULL)
-return (NULL);
-for (i = 0; i < olen; i++)
-doggy->owner[i] = owner[i];
-return (doggy);
+}
+for (c = 0; c < a; c++)
+{
+p->name[c] = name[c];
+}
+p->name[c] = '\0';
+for (c = 0; c < b; c++)
+{
+p->owner[c] = owner[c];
+}
+p->owner[c] = '\0';
+p->age = age;
+return (p);
 }

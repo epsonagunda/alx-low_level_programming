@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * print_list - function that prints all the elements of a list_t
+ * print_list - function that prints all the elements
  * @h: a pointer to our const list_t
  * Return: the number of nodes
  */
@@ -11,7 +11,7 @@ const list_t *current = h;
 size_t nodes = 0;
 while (current != NULL)
 {
-printf("[%d] %s\n", current->len, (current->str != NULL) ? current->str : "(nil)");
+printf("%d\n", current->len);
 current = current->next;
 nodes++;
 }

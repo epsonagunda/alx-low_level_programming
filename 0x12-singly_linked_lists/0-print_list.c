@@ -11,7 +11,7 @@ const list_t *current = h;
 size_t nodes = 0;
 while (current != NULL)
 {
-printf("%d\n", current->len);
+printf("[%d]%s\n", current->len, (current->str != NULL) ? current->str : "(nil)");
 current = current->next;
 nodes++;
 }

@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- *main - program that copies the content
- *of a file to another file
- *@argc: num argument to be counted
- *@argv: string argument
- *@Return: 0
+ * main - program that copies the
+ *content of a file to another file
+ * @argc: num argument
+ * @argv: string argument
+ * @Return: 0(pass)
  */
 int main(int argc, char *argv[])
 {

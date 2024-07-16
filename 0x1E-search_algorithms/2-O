@@ -1,4 +1,8 @@
 
 
+/***
+time complexity (worst case) of a linear search in an array of size n
+**/
 
-O(n)
+
+o(n)

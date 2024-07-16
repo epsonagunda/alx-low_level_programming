@@ -1,4 +1,4 @@
 /***
 space complexity (worst case) of an iterative linear search algorithm in an array of size n?
 ***/
-O(n)
+O(1)
